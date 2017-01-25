@@ -10,4 +10,8 @@ This user script simply makes it a little bit faster to download the captions fi
 
 First, you'll need to install the Greasemonkey/Tampermonkey plugin for your Web browser of choice. [Greasemonkey](http://www.greasespot.net/ "Greasemonkey site") (Firefox) and [Tampermonkey](https://tampermonkey.net/ "Tampermonkey site") (Chrome, Safari, Microsoft Edge) are plugins that permit you to modify and extend some functions of web pages displayed in a browser by running local user scripts. 
 
+Once you have either of those installed and enabled in your web browser of choice, the simplest way to add the Panopto transcript downloader user script is by navigating directly to the raw script file in this repository: [panopto_transcript_downloader.user.js](https://github.com/evccedtech/panopto-transcript-downloader/raw/master/panopto_transcript_downloader.user.js "Raw view of user script file"). Greasemonkey/Tampermonkey will recognize this as a user script and ask if you want to install it. Selecting the "install" option will add the script. At this point you should be able to use it.
+
+Alternatively, if you're a regular git user you can always clone this repository and manage/modify the script however you please. :-)
+
 ## How to use
