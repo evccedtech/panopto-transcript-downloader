@@ -2,7 +2,7 @@
 // @name        Panopto Transcript Downloader
 // @namespace   http://www.everettcc.edu/elearning
 // @description Adds download links to Panopto video view/edit pages for captions and full-text transcript. 
-// @include     /^https://[A-Za-z0-9\-]*\.hosted.panopto\.com/Panopto/Pages/Viewer\.aspx[\w-\?&=]*/
+// @include     /^https://[A-Za-z0-9\-]*\.hosted.panopto\.com/Panopto/Pages/Viewer\.aspx[\w-\?&=]+/
 // @version     1
 // @grant       none
 // ==/UserScript==
@@ -82,6 +82,11 @@ function getTranscriptItems(mode) {
     }
 
     $transcriptItems = $(transcriptSelector).find("div.event-tab-list div.index-event-row");
+
+    // We don't want to display download links if no captions exist yet
+    if ($transcriptItems.length === 0) {
+        return;
+    }
 
     $transcriptItems.each(function() {
 
