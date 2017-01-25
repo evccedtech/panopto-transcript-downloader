@@ -15,3 +15,10 @@ Once you have either of those installed and enabled in your web browser of choic
 Alternatively, if you're a regular git user you can always clone this repository and manage/modify the script however you please. :-)
 
 ## How to use
+
+It's easy! If you've enabled the user script in your browser, any time you navigate to the view/edit page for a Panopto-hosted video that has published captions you will a Downloads section added to the menu on the left side of the page. This will contain two links: one for captions and one for the transcript. 
+
+Clicking either link will download the associated file using your browser's native method for downloading text files. The captions link will download the time-coded captions file Panopto is currently using for the video. The transcript link will download a very lightly processed text file that has stripped out line breaks and time codes, and that has capitalized the first word of each sentence.
+
+Download links will not appear for videos that do not have closed captions enabled.
+
